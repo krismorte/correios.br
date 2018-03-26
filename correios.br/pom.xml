@@ -14,15 +14,26 @@
             <version>1.11.2</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.2.3</version>
-        </dependency>
-        <dependency>
             <groupId>org.glassfish</groupId>
             <artifactId>javax.json</artifactId>
             <version>1.0.4</version>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.daisy.libs/commons-httpclient -->
+        <dependency>
+            <groupId>org.daisy.libs</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.5</version>
+        </dependency>
+
+
         
         <!-- https://mvnrepository.com/artifact/javax.json/javax.json-api -->
         <dependency>

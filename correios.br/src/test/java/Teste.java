@@ -50,6 +50,8 @@ public class Teste {
             System.out.println("CEP " + cep.getBairro() + " " + cep.getUf());
         }*/
     }
+//http://www2.correios.com.br/sistemas/rastreamento/ctrl/ctrlRastreamento.cfm/DW620569438BR
+//http://www2.correios.com.br/sistemas/rastreamento/ctrl/ctrlRastreamento.cfm?acao=track&objetos=DW620569438BR&btnPesq=Buscar
 
     public static void rastreio() {
         SROCorreiosAPI correiosAPI = new SROCorreiosAPI();
@@ -70,11 +72,15 @@ public class Teste {
     }
 
     public static void main(String[] args) {
-        
+
         System.setProperty("http.proxyHost", "172.31.3.254");
         System.setProperty("http.proxyPort", "3128");
         System.setProperty("https.proxyHost", "172.31.3.254");
         System.setProperty("https.proxyPort", "3128");
+
+        PostReqEx p = new PostReqEx();
+        p.sendReq("http://www2.correios.com.br/sistemas/rastreamento/ctrl/ctrlRastreamento.cfm?", "DW620569438BR");
+
         Teste.testeBuscaCep();
         Teste.testeCaelum();
         rastreio();
