@@ -70,7 +70,7 @@ public class Teste {
     }
 
     public static void main(String[] args) {
-
+        
         System.setProperty("http.proxyHost", "172.31.3.254");
         System.setProperty("http.proxyPort", "3128");
         System.setProperty("https.proxyHost", "172.31.3.254");
